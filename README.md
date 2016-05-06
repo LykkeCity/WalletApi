@@ -4,7 +4,7 @@
 
 Service is queue based (queue name: "emailsqueue"). Currently we handle next queue messages:
 
- - Create simple plaintext broadcast request
+ - Create plain text broadcast request
 
   ```PlainTextBroadcast:{"Data":{"BroadcastGroup":100,"MessageData":{"Subject":"Some subject","Text":"Some text"}}}```
 
