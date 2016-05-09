@@ -22,7 +22,7 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
 
  - Request to notify us about already handled transaction:
 
-  ```/POST http://+:8080/HandledTx/```
+  ```/POST http://+:8088/HandledTx/```
   ```{ "Id" : "transactionId" }```
 
  - Response:
