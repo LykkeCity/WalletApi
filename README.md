@@ -24,16 +24,16 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
 
   ```/POST http://+:8088/HandledTx/```
   - Swap:
-  ```{ "Id" : "transactionId", "Hash" : "blockchainHash", "Operation" : "Swap" }```
+  ```{ "TransactionId" : "transactionId", "BlockchainHash" : "blockchainHash", "Operation" : "Swap" }```
 
   - CashIn:
-  ```{ "Id" : "transactionId", "Hash" : "blockchainHash", "Operation" : "CashIn" }```
+  ```{ "TransactionId" : "transactionId", "BlockchainHash" : "blockchainHash", "Operation" : "CashIn" }```
 
   - CashOut:
-  ```{ "Id" : "transactionId", "Hash" : "blockchainHash", "Operation" : "CashOut" }```
+  ```{ "TransactionId" : "transactionId", "BlockchainHash" : "blockchainHash", "Operation" : "CashOut" }```
 
   - Transfer:
-  ```{ "Id" : "transactionId", "Hash" : "blockchainHash", "Operation" : "Transfer" }```
+  ```{ "TransactionId" : "transactionId", "BlockchainHash" : "blockchainHash", "Operation" : "Transfer" }```
 
  - Response:
 
