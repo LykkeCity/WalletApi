@@ -37,6 +37,6 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
 
  - Response:
 
-  ```200 OK: { "Error":null }```
+  ```{ "Error":null }```
 
-  ```500: { "Error" : {Code:1, Message="Invalid input."} }```
+  ```{ "Error" : {Code:1, Message="Invalid input."} }```
