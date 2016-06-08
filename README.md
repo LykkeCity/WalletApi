@@ -15,6 +15,8 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
        ```ClientSupport = 200```
        
        ```Errors = 300```
+       
+       ```Warnings = 400```
 
 #Lykke Jobs
 
