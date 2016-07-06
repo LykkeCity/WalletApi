@@ -18,6 +18,10 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
        
        ```Warnings = 400```
 
+ - Create plain text email request
+  ```PlainTextEmail:{"Data":{"EmailAddress":"billg@microsoft.com","MessageData":{"Sender":"bob@noname.com","Subject":"Hi, Bill!","Text":"Some text"}}}```
+
+
 #Lykke Jobs
 
 ##Handled transactions HTTP Listener
