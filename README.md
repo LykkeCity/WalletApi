@@ -47,3 +47,25 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
   ```{ "Error":null }```
 
   ```{ "Error" : {Code:1, Message="Invalid input."} }```
+
+#MyLykke
+
+###To check should client app show "MyLykke" tab or no use GET api/MyLykkeSettings with authorization.
+
+ - Response:
+```sh
+{
+  "Result": {
+    "MyLykkeEnabled": true
+  },
+  "Error": null
+}
+```
+
+ - Under hood:
+ 
+MyLykkeEnabled = **[client setting "MyLykke enabled"]** != null ? **[client setting "MyLykke enabled"]** : **[global setting "MyLykke enabled"]**
+  
+**[client setting "MyLykke enabled"]** stored in IClientSettingsRepository (MyLykkeSettings -> bool? MyLykkeEnabled)
+  
+**[global setting "MyLykke enabled"]** stored in IAppGlobalSettingsRepositry (IAppGlobalSettings -> bool ShowMyLykke)
