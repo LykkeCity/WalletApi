@@ -17,6 +17,10 @@ Service is queue based (queue name: "emailsqueue"). Currently we handle next que
        ```Errors = 300```
        
        ```Warnings = 400```
+       
+       ```Payments = 500```
+       
+       ```CompetitionPlatform = 600```
 
  - Create plain text email request
 
@@ -39,6 +43,10 @@ Currently we handle next queue messages:
   ```{"Type":"Warnings", "Sender":"AppName", "Message":"Your warning message"}```
 
 ![Warning message example](https://lkefiles.blob.core.windows.net:443/images/etc/warn.jpg)
+
+  ```{"Type":"Info", "Sender":"AppName", "Message":"Your info message"}```
+
+![Info message example](https://lkefiles.blob.core.windows.net:443/images/etc/info.png)
 
 
 #Lykke Jobs
